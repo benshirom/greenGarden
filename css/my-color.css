@@ -1,0 +1,36 @@
+.bg-color1{
+    background-color:#FEF5ED ;
+}
+.font-color1{
+  color: #FEF5ED;
+}
+.bg-color2{
+    background-color:#D3E4CD ;
+
+}
+.font-color2{
+    color: #D3E4CD;
+
+}
+.bg-color3{
+    background-color:#ADC2A9 ;
+
+}
+.font-color3{
+    color: #ADC2A9;
+
+}
+.bg-color4{
+    background-color:#99A799 ;
+
+}
+.font-color4{
+    color: #99A799;
+
+}
+.mix-color{
+    background: #FEF5ED;
+background: -moz-linear-gradient(left, #FEF5ED 0%, #FEF5ED 0%, #99A799 100%);
+background: -webkit-linear-gradient(left, #FEF5ED 0%, #FEF5ED 0%, #99A799 100%);
+background: linear-gradient(to right, #FEF5ED 0%, #FEF5ED 0%, #99A799 100%);
+}

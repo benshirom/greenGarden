@@ -1,0 +1,138 @@
+main .strip1{
+    min-height: 300px;
+    
+
+}
+main .contact{
+    position: absolute;
+    background-color: white;
+    max-width: 630px;
+    border-radius: 30px;
+    left: 23%;
+    top: 10%;
+    max-height: 85%;
+
+}
+
+main .contact .row1{
+    border-radius: 30px 0px 0px 30px;
+
+}
+main .contact .row1 a :hover{
+    color: black;
+}
+main .contact .row1 a i{
+    font-size: 2em;
+
+}
+main .contact .row1 a i :hover{
+    color: black;
+
+}
+ /*
+main .contact .row-mix{
+    height: 220px;
+    width: 120px; 
+}
+*/
+main .contact .row2{
+    border-radius: 0px 30px 30px 0px;
+    
+}
+main .strip2{
+    min-height: 400px;
+
+}
+
+@media (min-width:1300px){
+    main .contact 
+    {
+        width: 670px;
+
+        left: 30%;
+
+    }
+  }
+
+@media (max-width:940px){
+    /* main .contact .row1 
+    {
+        font-size: 0.8em;
+
+    }
+    main .contact .row1 h2{
+       font-size: 2em;
+
+    } */
+    main .contact{
+        /* font-size: 0.8em; */
+        width: 550px;
+        left: 16%;
+
+    }
+
+  }
+  @media (max-width:780px){
+    main .contact 
+    {
+        width: 500px;
+
+        font-size: 0.7em;
+        left: 10%;
+
+    }
+  }
+  
+  @media (max-width:570px){
+    main .contact 
+    {
+        width: 400px;
+
+        font-size: 0.5em;
+        left: 10%;
+
+    }
+    .form-control {
+        width: 100%;
+    }
+    .form-control-sm{
+        width: 100%;
+    }
+  }
+  @media (max-width:470px){
+    main .contact 
+    {
+        width: 350px;
+
+        font-size: 0.5em;
+        left: 9%;
+
+    }
+  }
+  @media (max-width:390px){
+    main .contact 
+    {
+        width: 350px;
+
+        font-size: 0.5em;
+        left: 5%;
+
+    }
+    .form-control {
+        width: 100%;
+    }
+    .form-control-sm{
+        width: 100%;
+    }
+  }
+  @media (max-width:360px){
+    main .contact 
+    {
+        width: 340px;
+
+        font-size: 0.5em;
+        left: 3%;
+
+    }
+   
+  }

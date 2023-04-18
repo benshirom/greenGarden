@@ -1,0 +1,222 @@
+/* my css */
+  header{
+    height: 100px;
+
+    
+  }
+  .container{
+  max-width: 1160px;
+  max-height: inherit;
+
+
+  }
+  header .row{
+    max-height: inherit;
+    flex-wrap: nowrap;
+
+  }
+  header .logo img{
+      max-width: 150px;
+      margin: 20px 0px;
+  }
+  
+  header .nav a{
+    color:grey;
+    text-decoration: none;
+    padding:0 10px;
+    font-size: 1.1em;
+    
+  }
+  header .container nav{
+    z-index: 2;
+    
+  }
+  
+  header .nav a:hover{
+    color:rgb(0, 0, 0);
+  }
+  header .search{
+    max-width: 200px;
+  }
+  
+  header .search input{
+    max-width: 150px;
+    border:none;
+    outline: none;
+    background-color: transparent;
+  }
+  
+  header .search button{
+    border:none;
+    background: none;
+    outline: none;
+  }
+  
+
+  footer{
+    min-height: 100px;
+} 
+footer p a{
+  text-decoration: none;
+  color: black;
+}
+
+/* up and down scroll css */
+
+#myBtn {
+  
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: wheat; /* Set a background color */
+  color: black; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 10px; /* Some padding */
+  border-radius: 100%; /* Rounded corners */
+  font-size: 15px; /* Increase font size */
+  opacity: 0.5;
+
+}
+
+#myBtn:hover {
+  background-color: black; /* Add a dark-grey background on hover */
+  color: wheat; /* Text color */
+
+}
+.border-bottom {
+  border-bottom: var(--bs-border-width) var(--bs-border-style) #fef5ed!important;
+}
+
+header .nav_open{
+  opacity: 95% !important;
+  transform: translate(0,0);
+  right: 160px !important;
+
+}
+
+
+/* my css */
+@media (max-width:992px){
+  header .logo img{
+    max-width: 120px;
+    /* margin: 5px 5px; */
+  }
+  header .row nav ul li a{
+    font-size: 0.95em;
+    
+  }
+  header .search{
+    max-width: 150px;
+  }
+  header .search input{
+    max-width: 100px;
+  }
+
+}
+
+@media (max-width:767px){
+  
+    header .row nav {
+      display: none;
+      position: absolute;
+      top:100px;
+      right:0;
+      background: -moz-linear-gradient(top, #FEF5ED 0%, #ADC2A9 100%, #C59237 100%);
+      background: -webkit-linear-gradient(top, #FEF5ED 0%, #ADC2A9 100%, #C59237 100%);
+      background: linear-gradient(to bottom, #FEF5ED 0%, #ADC2A9 100%, #C59237 100%);
+      width:100%;
+      max-width: 160px;
+      /* transform: translate(0,-130%); */
+      transform: translate(100%,0);
+      transition: 800ms;
+      z-index: 10;
+       opacity: 0; 
+       border-radius: 0px 0px 0px 10px; 
+    }
+   
+  
+    header .row nav ul {
+      display: block;
+      text-align: center;
+    }
+  
+    header .row nav ul li{
+      padding:8px;
+      border-bottom: 1px solid grey;
+    }
+    header .row nav ul li a{
+      font-size: 0.9em;
+      padding: 0px;
+    }
+    header .row nav .search{
+      /* fit-content - הרוחב לפי התוכן */
+      width:fit-content;
+      margin:8px auto;
+    }
+/*   
+    header .row nav .search input{
+    max-width:150px;
+      width:50%;
+      
+    } */
+    header .row .burger{
+      display: block;
+    }
+  
+    header .row .burger i{
+      /* מגדיל את האייקון של הבורגר */
+      font-size: 2.5em;
+    }
+  }
+  @media (max-width:510px){
+    header .row nav ul li a{
+      font-size: 0.6em;
+      /* padding: 0px; */
+    }
+
+  }
+  @media (max-width:390px){
+    header .row nav {
+      top:100px;
+      /* width: 30%; */
+    }
+    header .row nav .search{
+      margin: 3px auto ;
+    }
+    header .row nav ul li a{
+      font-size: 0.57em;
+      padding: 0px;
+    }
+    header .search button{
+      max-width: 10px;
+      max-height: 10px;
+    }
+    header .search button img{
+      max-width: 10px;
+    max-height: 10px;
+    }
+    
+    header {
+      min-height: 80px;
+    }
+  
+    header .logo{
+      width:80%;
+    }
+    
+    header .row .burger i{
+      /* מגדיל את האייקון של הבורגר */
+      font-size: 1.5em;
+    }
+  
+    header .row nav .search input{
+      max-width:60px;
+      /* width:50%; */
+    }
+  }
+  
+  

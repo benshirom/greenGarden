@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GG-Home</title>
+  <!--icon-->
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/icon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/icon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/icon/favicon-16x16.png">
+  <link rel="manifest" href="/images/icon/site.webmanifest">
+  <!--iconend-->
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!--my css-->
+  <link rel="stylesheet" href="css/my-color.css">
+  <link rel="stylesheet" href="css/header_footer.css">
+  <link rel="stylesheet" href="css/indexstyle.css">
+  <!--AOS Font Awesome -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+</head>
+
+<body>
+
+  <header class="container-fluid bg-color1">
+    <button onclick="topFunction()" id="myBtn" title="Go to top"></button>
+    <div class="container ">
+      <div class="row align-items-center">
+        <div class="logo col-auto">
+          <!-- img-fluid - רוחב 100 אחוז עד הגודל המקורי של התמונה -->
+          <img src="https://i.ibb.co/mCRYLZH/Green-Garden-Cut-removebg-preview.png" alt="logo" class="img-fluid">
+        </div>
+        <!-- col - מתפרס כמה שהוא יכול עד שנתקע בתגית אחות
+                    או מתפרס 100 אחוז -->
+        <nav id="nav_open" class="col d-md-flex justify-content-between align-items-center p-0 ">
+          <ul class="nav">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li><a href="media.html">MEDIA</a></li>
+            <li><a href="contact.html">CONTACT US</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="trivia.html">TRIVIA</a></li>
+
+          </ul>
+          <div class="search border p-1 rounded">
+            <input type="search" >
+            <button>
+              <img src="images/icon/glass.png" alt="glass">
+            </button>
+          </div>
+        </nav>
+        <div class="burger col text-end d-md-none">
+          <!-- כדי שהסקריפט יעבוד צריך להוסיף איי די לבורגר -->
+          <i id="burger_btn" class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- strip mobile -->
+
+  <div class="strip bg-color2 d-sm-none" style="background-image: url(https://i.ibb.co/7R24pJB/pexels-lumn-4100579-1.jpg);">
+    
+  </div>
+  <!-- strip  -->
+  <div class="strip  bg-color2 d-sm-block d-none">
+    <!-- carousel start -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" >
+          <div class="bg_pic" style="background-image: url(https://i.ibb.co/ZdVfppr/pexels-amar-preciado-8148592.jpg);"></div>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Growth for research</h5>
+            <p>Grow cactus on request for important studies.</p>
+          </div>
+        </div>
+        <div class="carousel-item" >
+          <div class="bg_pic" style="background-image: url(https://i.ibb.co/1rJmXnL/pexels-ronald-smith-4599059.jpg);"></div>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>special species</h5>
+            <p>Keep and grow rare species of cactus.</p>
+          </div>
+        </div>
+        <div class="carousel-item" >
+          <div class="bg_pic" style="background-image: url(https://i.ibb.co/JCPMF62/pexels-lumn-4100579.jpg);"></div>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>special store</h5>
+            <p>The cheapest and most unique store that sells the largest variety of cactus.</p>
+          </div>
+        </div>
+
+        <div class="carousel-item" >
+          <div class="bg_pic" style="background-image: url(https://i.ibb.co/b3HThSp/pexels-mike-b-109827.jpg);"></div>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Our cactus farm</h5>
+            <p>We specialize in growing cactus in natural field conditions.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+    <!-- carousel end -->
+
+  </div>
+  <main class="container-fluid bg-color3">
+
+    <div class="container py-5 px-0">
+      <div class="row justify-content-center">
+          <div class="baner" data-aos="zoom-in" data-aos-delay="1000"></div>
+        <!-- start box -->
+
+        <div class="col-sm-5 col-md-3 p-2 text-center">
+          <div class=" box rounded bg-color1 "  data-aos="zoom-in-up" data-aos-duration="1000"  data-aos-easing="ease-in-sine">
+            <a target="_blank" href="https://en.wikipedia.org/wiki/Cactus">
+              <img class="rounded-top" src="https://i.ibb.co/4MPdvj3/pexels-gary-barnes-6231880.jpg" alt="icon">
+              <h5>guidance center</h5>
+              <p class="px-1 my-3">
+                A unique guidance center where you learn how to grow and nurture cactus.
+
+                7 sessions of 50 minutes.
+              </p>
+
+            </a>
+          </div>
+        </div>
+        <!-- end box -->
+        <!-- start box -->
+        <div class="col-sm-5 col-md-3 p-2 text-center">
+          <div class=" box rounded bg-color1 "  data-aos="zoom-in-up" data-aos-duration="1000" data-aos-easing="ease-in-sine">
+            <a target="_blank" href="https://en.wikipedia.org/wiki/Mammillaria">
+              <img class="rounded-top" src="https://i.ibb.co/17KsxFM/pexels-rodnae-productions-7403068.jpg" alt="icon">
+              <h5>special employees</h5>
+              <p class="px-1 my-3">combination of special populations in growing the cacti.
+                With the combination we achieve a high quality company.
+              </p>
+
+            </a>
+          </div>
+        </div>
+        <!-- end box -->
+        <div class="baner" data-aos="zoom-in" data-aos-delay="1000"></div>
+
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="baner" data-aos="zoom-in" data-aos-delay="1000"></div>
+        <!-- start box -->
+        <div class="col-sm-5 col-md-3 p-2 text-center">
+          <div class=" box rounded bg-color1" data-aos="zoom-in-up" data-aos-duration="1000"  data-aos-easing="ease-in-sine">
+            <a target="_blank" href="https://en.wikipedia.org/wiki/Saguaro">
+              <img class="rounded-top" src="https://i.ibb.co/WPQxTh7/earl-wilcox-rop1rk-XTs-LE-unsplash.jpg" alt="icon">
+              <h5>food guide</h5>
+              <p class="px-1 my-3">Food guide on cactus, explanation of cooking methods and types of edible cactus.
+                including tasting.</p>
+
+            </a>
+          </div>
+        </div>
+        <!-- end box -->
+        <!-- start box -->
+        <div class="col-sm-5 col-md-3 p-2 text-center">
+          <div class=" box rounded bg-color1 " data-aos="zoom-in-up" data-aos-duration="1000"  data-aos-easing="ease-in-sine">
+            <a target="_blank" href="https://en.wikipedia.org/wiki/Pachycereus_pringlei">
+              <img class="rounded-top" src="https://i.ibb.co/6b3TPQX/barthelemy-rigaud-EMohgq-MYz8g-unsplash.jpg" alt="icon">
+              <h5>Selling cactuses</h5>
+              <p class="px-1 my-3">Sale of cacti in all stages of growth.
+                There are a variety of cactus types in many colors.
+                Just choose and contact us.</p>
+
+            </a>
+          </div>
+        </div>
+        <!-- end box -->
+        <div class="baner" data-aos="zoom-in" data-aos-delay="1000"></div>
+
+      </div>
+
+
+
+    </div>
+
+  </main>
+
+  <footer class="bg-color4 container-fluid">
+    <div class="py-3 container">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-0">
+        <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
+        <li class="nav-item"><a href="media.html" class="nav-link px-2 text-muted">Media</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link px-2 text-muted">About Us</a></li>
+        <li class="nav-item"><a href="faq.html" class="nav-link px-2 text-muted">FAQ</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link px-2 text-muted">Contact Us</a></li>
+        <li class="nav-item"><a href="trivia.html" class="nav-link px-2 text-muted">TRIVIA</a></li>
+      </ul>
+      <div>
+        <p class="text-center text-muted">
+          <a target="_blank" href="https://www.instagram.com/">
+            <i class="fa fa-instagram p-1" aria-hidden="true"></i>
+          </a>
+          <a target="_blank" href="https://www.facebook.com/">
+            <i class="fa fa-facebook-official p-1" aria-hidden="true"></i>
+          </a>
+          <a target="_blank" href="https://twitter.com/">
+            <i class="fa fa-twitter p-1" aria-hidden="true"></i>
+          </a>
+          <a target="_blank" href="https://www.youtube.com/">
+            <i class="fa fa-youtube-play p-1" aria-hidden="true"></i>
+          </a>
+          <br>
+          © 2022 Ben Shirom, Inc
+        </p>
+
+      </div>
+
+
+    </div>
+  </footer>
+
+
+
+
+
+
+  <!-- SLIDER -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+
+  <!-- VAN BURGER -->
+  <script src="js/arrow.js"></script>
+  <script src="js/burger.js"></script>
+  <!--אנימציה AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1014137702109172"
+  crossorigin="anonymous"></script>
+</body>
+
+</html>

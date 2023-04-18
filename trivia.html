@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GG-Trivia</title>
+    <!--icon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/icon/favicon-16x16.png">
+    <link rel="manifest" href="/images/icon/site.webmanifest">
+    <!--iconend-->
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--my css-->
+    <link rel="stylesheet" href="css/my-color.css">
+    <link rel="stylesheet" href="css/header_footer.css">
+    <link rel="stylesheet" href="css/trivia.css">
+    <!--AOS Font Awesome -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="js/app_trivia.js"></script>
+    <script src="js/QuestionTrivia.js"></script>
+    <script src="js/triviaJson.js"></script>
+
+</head>
+
+<body>
+    <header class="container-fluid bg-color1">
+        <button onclick="topFunction()" id="myBtn" title="Go to top"></button>
+
+        <div class="container ">
+            <div class="row align-items-center">
+                <div class="logo col-auto">
+                    <!-- img-fluid - רוחב 100 אחוז עד הגודל המקורי של התמונה -->
+                    <img src="https://i.ibb.co/mCRYLZH/Green-Garden-Cut-removebg-preview.png" alt="logo" class="img-fluid">
+                </div>
+                <!-- col - מתפרס כמה שהוא יכול עד שנתקע בתגית אחות
+                    או מתפרס 100 אחוז -->
+                <nav id="nav_open" class="col d-md-flex justify-content-between align-items-center p-0 ">
+                    <ul class="nav">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT US</a></li>
+                        <li><a href="media.html">MEDIA</a></li>
+                        <li><a href="contact.html">CONTACT US</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="trivia.html">TRIVIA</a></li>
+
+                    </ul>
+                    <div class="search border p-2 rounded">
+                        <input type="search" >
+                        <button>
+                            <img src="images/icon/glass.png" alt="glass">
+                        </button>
+                    </div>
+                </nav>
+                <div class="burger col text-end d-md-none">
+                    <!-- כדי שהסקריפט יעבוד צריך להוסיף איי די לבורגר -->
+                    <i id="burger_btn" class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="container-fluid bg-color2">
+        <div class="container containerM py-5">
+            <div id="trivia_screen" class=" flex-column mt-3 py-5 px-5 containerM  rounded rounded-5 mx-sm-5 shadow " 
+            style="width: 80%;background-image: url(https://i.ibb.co/bFPknKW/ashim-d-silva-USgb-K0-TPx-Q-unsplash.jpg); background-size: cover; background-position: center;">
+                 
+            </div>
+
+
+        </div>
+
+    </main>
+
+
+    <footer class="bg-color4 container-fluid ">
+        <div class="py-3  container">
+
+            <ul class="nav justify-content-center border-bottom pb-3 mb-0">
+                <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
+                <li class="nav-item"><a href="media.html" class="nav-link px-2 text-muted">Media</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link px-2 text-muted">About Us</a></li>
+                <li class="nav-item"><a href="faq.html" class="nav-link px-2 text-muted">FAQ</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link px-2 text-muted">Contact Us</a></li>
+                <li class="nav-item"><a href="trivia.html" class="nav-link px-2 text-muted">TRIVIA</a></li>
+            </ul>
+            <div>
+                <p class="text-center text-muted">
+                    <a target="_blank" href="https://www.instagram.com/">
+                        <i class="fa fa-instagram p-1" aria-hidden="true"></i>
+                    </a>
+                    <a target="_blank" href="https://www.facebook.com/">
+                        <i class="fa fa-facebook-official p-1" aria-hidden="true"></i>
+                    </a>
+                    <a target="_blank" href="https://twitter.com/">
+                        <i class="fa fa-twitter p-1" aria-hidden="true"></i>
+                    </a>
+                    <a target="_blank" href="https://www.youtube.com/">
+                        <i class="fa fa-youtube-play p-1" aria-hidden="true"></i>
+                    </a>
+                    <br>
+                    © 2022 Ben Shirom, Inc
+                </p>
+
+            </div>
+
+
+        </div>
+    </footer>
+
+
+
+
+
+
+    <!-- SLIDER -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+    <!-- VAN BURGER -->
+    <script src="js/arrow.js"></script>
+
+    <script src="js/burger.js"></script>
+
+    <!--אנימציה AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1014137702109172"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
